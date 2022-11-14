@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Carter+One&family=Chela+One&family=Luckiest+Guy&family=Moo+Lah+Lah&family=Press+Start+2P&family=Roboto:wght@100&family=Rubik+Beastly&family=Rubik+Mono+One&family=Titan+One&family=Ultra&display=swap" rel="stylesheet">
+<style>
+
+body{
+background: blue;
+background: linear-gradient(to right,blue, #000556);
+
+}
+
+
+input{
+width: 3rem;
+margin: 10px;
+background-color: white;
+
+border-radius: 10px;
+padding: 10px;
+color: black;
+
+}
+
+input:hover{
+color: gray;
+}
+
+
+
+form{
+width: 300px;
+height: 488px;
+border: solid black;
+border-radius: 1rem;
+background: black;
+padding-left: 1rem;
+padding-top: 1rem;
+padding-bottom: 1rem;
+
+
+}
+
+
+
+input[type=reset]{
+background-color:white;
+font-size: 2rem;
+
+}
+
+input:hover{
+background-color: blue;
+
+}
+
+
+input[type=button]{
+
+    background-color: white;
+    font-size: 2rem;
+    border: solid black;
+    cursor: pointer;
+}
+
+input[type=textfield]{
+ width: 15rem;
+font-size: 2rem;
+background-color:white;
+border-radius: 10px;
+text-align: center;
+border: solid black ;
+
+
+}
+
+
+
+.conteiner{
+
+ display: flex;
+ justify-content: center;
+
+}
+
+h1{
+
+    text-align: center;
+    font-size: 2.2rem;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    padding: 1.2rem;
+
+  }
+
+
+
+
+
+.Calculadora input[value="+"]{
+
+    background-color: orange;
+}
+
+.Calculadora input:hover[ value="+"]{
+
+    background-color:#99991111;
+
+
+}
+.Calculadora input[ value="-"  ]{
+    background-color: orange;
+}
+
+.Calculadora input:hover[ value="-"  ]{
+    background-color: #99991111;
+}
+.Calculadora input[ value="x"  ]{
+    background-color: orange;
+}
+
+.Calculadora input:hover[ value="x"  ]{
+    background-color:#99991111;
+}
+.Calculadora input[ value="/"  ]{
+    background-color:orange;
+}
+
+.Calculadora input:hover[ value="/"  ]{
+    background-color:#99991111 ;
+}
+
+.Calculadora input:hover{
+
+    background-color: #99991111;
+}
+
+
+.Calculadora input:hover[type=textfield]{
+    background-color: white;
+    
+}
+.Calculadora input[ value="C"  ]{
+    background-color:#777;
+}
+.Calculadora input:hover[ value="C"  ]{
+    background-color:#99991111;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+    <h1> Calculator</h1>
+
+    <div class="conteiner">
+ 
+    <div class="Calculadora">
+<form name="Calculator">
+
+    <input type="textfield" name="ans" value="" autocomplete="off" >
+<br>
+    <input type="button" value="7" onclick="document.Calculator.ans.value+=`7`">   
+    <input type="button" value="8" onclick="document.Calculator.ans.value+=`8`">
+    <input type="button" value="9"onclick="document.Calculator.ans.value+=`9`">
+    <input type="button" value="+"onclick="document.Calculator.ans.value+=`+`">
+<br>
+<input type="button" value="4"onclick="document.Calculator.ans.value+=`4`">
+<input type="button" value="5"onclick="document.Calculator.ans.value+=`5`">
+<input type="button" value="6"onclick="document.Calculator.ans.value+=`6`">
+<input type="button" value="-"onclick="document.Calculator.ans.value+=`-`">
+<br>
+<input type="button" value="1"onclick="document.Calculator.ans.value+=`1`">
+<input type="button" value="2"onclick="document.Calculator.ans.value+=`2`">
+<input type="button" value="3"onclick="document.Calculator.ans.value+=`3`">
+<input type="button" value="x"onclick="document.Calculator.ans.value+=`*`">
+<br>
+<input type="button" value="0"onclick="document.Calculator.ans.value+=`0`">
+<input type="button" value="."onclick="document.Calculator.ans.value+=`.`">
+<input type="button" value="="onclick="document.Calculator.ans.value= eval(document.Calculator.ans.value)">
+<input type="button" value="/"onclick="document.Calculator.ans.value+=`/`">
+<br>
+
+
+<input type="reset" value="C"onclick="document.Calculator.ans.value+=`c`">
+
+</form>
+
+
+
+    </div>
+
+
+
+
+
+</div>
+
+
+
+    
+</body>
+</html>
