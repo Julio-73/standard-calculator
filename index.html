@@ -9,8 +9,8 @@
 <style>
 
 body{
-background: blue;
-background: linear-gradient(to right,blue, #000556);
+background: rgb(125, 125, 219);
+
 
 }
 
@@ -18,12 +18,12 @@ background: linear-gradient(to right,blue, #000556);
 input{
 width: 3rem;
 margin: 10px;
-background-color: white;
-
-border-radius: 10px;
+background-color: rgb(233, 213, 213);
+font-weight: 600;
+border-radius: 10px  ;
 padding: 10px;
 color: black;
-
+border: solid black ;
 }
 
 input:hover{
@@ -33,15 +33,15 @@ color: gray;
 
 
 form{
-width: 300px;
-height: 488px;
+width: 325px;
+height: 520px;
 border: solid black;
 border-radius: 1rem;
 background: black;
-padding-left: 1rem;
+padding-left: 2.5rem;
 padding-top: 1rem;
 padding-bottom: 1rem;
-
+pad
 
 }
 
@@ -69,7 +69,7 @@ input[type=button]{
 
 input[type=textfield]{
  width: 15rem;
-font-size: 2rem;
+font-size: 3rem;
 background-color:white;
 border-radius: 10px;
 text-align: center;
@@ -94,6 +94,7 @@ h1{
     color: black;
     font-family: 'Press Start 2P', cursive;
     padding: 1.2rem;
+    font-weight: 900;
 
   }
 
@@ -108,7 +109,7 @@ h1{
 
 .Calculadora input:hover[ value="+"]{
 
-    background-color:#99991111;
+    background-color:#312f2f;
 
 
 }
@@ -117,26 +118,26 @@ h1{
 }
 
 .Calculadora input:hover[ value="-"  ]{
-    background-color: #99991111;
+    background-color: #312f2f;
 }
 .Calculadora input[ value="x"  ]{
     background-color: orange;
 }
 
 .Calculadora input:hover[ value="x"  ]{
-    background-color:#99991111;
+    background-color:#312f2f;
 }
 .Calculadora input[ value="/"  ]{
     background-color:orange;
 }
 
 .Calculadora input:hover[ value="/"  ]{
-    background-color:#99991111 ;
+    background-color: #312f2f;
 }
 
 .Calculadora input:hover{
 
-    background-color: #99991111;
+    background-color: #312f2f;
 }
 
 
@@ -148,9 +149,15 @@ h1{
     background-color:#777;
 }
 .Calculadora input:hover[ value="C"  ]{
-    background-color:#99991111;
+    background-color:#312f2f;
+    
 }
-
+.Calculadora input[ value="="  ]{
+    background-color: green;
+}
+.Calculadora input:hover[ value="="  ]{
+    background-color: #312f2f;
+}
 </style>
 
 
@@ -159,7 +166,7 @@ h1{
 
 <body>
 
-    <h1> Calculator</h1>
+    <h1 class="cal" > Calculator</h1>
 
     <div class="conteiner">
  
@@ -199,11 +206,10 @@ h1{
     </div>
 
 
+<!-------Java Script------>
+<script src="https://unpkg.com/scrollreveal"></script>
 
-
-
-</div>
-
+<script src="Index.js" ></script>
 
 
     
